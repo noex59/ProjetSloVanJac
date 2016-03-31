@@ -25,7 +25,6 @@ import javax.swing.JOptionPane;
 			
 			SuperPlateau grille = new SuperPlateau(taille);
 			Ile ile = new Ile(taille);
-			System.out.println((1.0*(pourcent/2))/100);
 			ile.init(taille, pourcent);
 			grille.setJeu(ile.getJeu());
 			grille.affichage();
