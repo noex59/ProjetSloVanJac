@@ -1,5 +1,4 @@
 package proj;
-import tps.Plateau;
 
 public class SuperPlateau extends Plateau{
 

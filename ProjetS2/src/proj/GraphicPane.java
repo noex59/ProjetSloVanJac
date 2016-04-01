@@ -1,4 +1,4 @@
-package tps;
+package proj;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -8,8 +8,6 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
-
-import proj.Parcelle;
 /**
  * La classe GraphicPane permet d'afficher un plateau de Jeu carré
  * sur lequel sont disposés des images représentant les éléments du jeu

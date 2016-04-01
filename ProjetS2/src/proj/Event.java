@@ -1,4 +1,4 @@
-package tps;
+package proj;
 
 public interface Event {
 	public static final int KEY_EVENT = 1 ;

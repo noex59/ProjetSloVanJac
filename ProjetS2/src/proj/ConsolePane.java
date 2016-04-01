@@ -1,4 +1,4 @@
-package tps;
+package proj;
 
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;

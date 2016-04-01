@@ -1,4 +1,4 @@
-package tps;
+package proj;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.InputEvent;
@@ -8,7 +8,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 import javax.swing.JFrame;
-import proj.Parcelle;
 /**
  * La classe Plateau permet d'afficher un plateau de Jeu carré
  * sur lequel sont disposés des images représentant les éléments du jeu

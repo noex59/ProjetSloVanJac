@@ -1,4 +1,4 @@
-package tps;
+package proj;
 
 import java.awt.event.KeyEvent;
 
