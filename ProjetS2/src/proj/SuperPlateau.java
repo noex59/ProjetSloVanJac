@@ -14,7 +14,7 @@ public class SuperPlateau extends Plateau{
 	public boolean deplacer (int x, int y, int a, int b) {
 		Parcelle[][] test = this.getJeu();
 		
-		if(test[a][b].getValue() == 0){
+		if(test[a][b].estVide()){
 			test[a][b] = test[x][y];
 			test[x][y] = new Rien();
 			return true;
