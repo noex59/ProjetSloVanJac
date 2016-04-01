@@ -18,27 +18,34 @@ public class Ile {
 	}
 
 	public void init(int taille, int pourcent) {
+		
+		for (int i = 1; i < taille-1; i++){
+			for (int j=1; j< taille-1; j++){
+					jeu[i][j]=new Rien();
+			}
+		}
+		
 		for (int l = 0; l < taille; l++) {
 			jeu[0][l]=new Mer(0,l);
 		}
 		for ( int k = 0; k < taille; k++){
 			jeu[k][0]=new Mer(k,0);
-			if (k==taille/2)
+			if (k==taille/2) {
 				((Mer) jeu[0][k]).setBateau1(true);
+				jeu[1][k]=new Explorateur(true, 1, k);
+			}
 		}
 		for ( int m=taille-1; m > 0; m--){
 			jeu[taille-1][m]=new Mer(taille-1,m);
 		}
 		for ( int n=taille-1;n>0;n--){
 			jeu[n][taille-1]=new Mer(n,taille-1);
-			if (n==taille/2)
+			if (n==taille/2) {
 				((Mer) jeu[taille-1][n]).setBateau2(true);
-		}
-		for (int i = 1; i < taille-1; i++){
-			for (int j=1; j< taille-1; j++){
-				jeu[i][j]=new Rien();
+				jeu[taille-2][n]=new Explorateur(false, taille-2, n);
 			}
 		}
+
 		this.addObstacles(false, pourcent/2);
 		this.addObstacles(true, pourcent/2);
 		this.addCoffreClef();

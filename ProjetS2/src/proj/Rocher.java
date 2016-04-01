@@ -8,6 +8,7 @@ public class Rocher extends Parcelle{
 	private int y;
 	
 	public Rocher(int x, int y) {
+		super();
 		coffre=false;
 		clef=false;
 		this.x=x;
