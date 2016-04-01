@@ -24,7 +24,7 @@ public class Ile {
 		for ( int k = 0; k < taille; k++){
 			jeu[k][0]=new Mer(k,0);
 			if (k==taille/2)
-				((Mer) jeu[k][0]).setBateau1(true);
+				((Mer) jeu[0][k]).setBateau1(true);
 		}
 		for ( int m=taille-1; m > 0; m--){
 			jeu[taille-1][m]=new Mer(taille-1,m);
@@ -32,7 +32,7 @@ public class Ile {
 		for ( int n=taille-1;n>0;n--){
 			jeu[n][taille-1]=new Mer(n,taille-1);
 			if (n==taille/2)
-				((Mer) jeu[n][taille-1]).setBateau2(true);
+				((Mer) jeu[taille-1][n]).setBateau2(true);
 		}
 		for (int i = 1; i < taille-1; i++){
 			for (int j=1; j< taille-1; j++){

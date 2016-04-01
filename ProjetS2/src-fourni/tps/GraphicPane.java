@@ -79,8 +79,8 @@ class GraphicPane extends JPanel {
 		g.setColor( Color.white );
 		while ((h<size.height) && (lg < nbLig)) {
 			while ((w<size.width) && (col < nbCol)) {
-				if (jeu[col][lg].getValue()!=0)
-					g.drawImage(images[jeu[col][lg].getValue()-1].getImage(),w,h,null);
+				if (jeu[lg][col].getValue()!=0)
+					g.drawImage(images[jeu[lg][col].getValue()-1].getImage(),w,h,null);
 				else
 					g.drawRect(w-1, h-1, dimImage-2, dimImage-2);
 				w+=dimImage;
